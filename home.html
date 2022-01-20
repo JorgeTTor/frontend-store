@@ -25,7 +25,6 @@
   }
 
   body {
-
     background-color: var(--very-light-green);
     font-family: 'Montserrat', sans-serif;
     font-family: 'Quicksand', sans-serif;
@@ -36,6 +35,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
+    place-content: center;
   }
 
   .product-card {
@@ -53,10 +53,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 16px;
   }
 
   .product-info figure {
     margin: 0;
+  }
+
+  .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
   }
 
 
@@ -79,13 +94,13 @@
       width: 140px;
       height: 140px;
     }
-
   }
 </style>
 
 <body>
   <section class="main-container">
     <div class="cards-container">
+
       <div class="product-card">
         <img src="./assets/products/1graypot_purpleplate.jpg" alt="gray pot" class="product-img">
         <div class="product-info">
@@ -98,9 +113,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/2whiteJar.jpg" alt="white jar" class="product-img">
         <div class="product-info">
@@ -113,9 +126,8 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
+
       <div class="product-card">
         <img src="./assets/products/3whiteJarandplates.jpg" alt="white jar purpleplate" class="product-img">
         <div class="product-info">
@@ -128,9 +140,8 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
+
       <div class="product-card">
         <img src="./assets/products/4set-4jarrones.jpeg" alt="jar sets" class="product-img">
         <div class="product-info">
@@ -143,9 +154,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/5orangepotandgoldenvase.jpg" alt="orange pot" class="product-img">
         <div class="product-info">
@@ -158,9 +167,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/6whitejar2.jpg" alt="white jar" class="product-img">
         <div class="product-info">
@@ -173,9 +180,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/7orangepot.jpg" alt="orange pot" class="product-img">
         <div class="product-info">
@@ -188,9 +193,8 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
+
       <div class="product-card">
         <img src="./assets/products/8brown_bluejar.jpg" alt="brown blue jar" class="product-img">
         <div class="product-info">
@@ -203,9 +207,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/9brownpot_cactus.jpg" alt="brown pot with cactus" class="product-img">
         <div class="product-info">
@@ -218,9 +220,8 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
+
       <div class="product-card">
         <img src="./assets/products/10brownpot_green.jpg" alt="brown pot green vase" class="product-img">
         <div class="product-info">
@@ -233,9 +234,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/11pinkpot.jpg" alt="pink pot" class="product-img">
         <div class="product-info">
@@ -248,9 +247,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/12.jpeg" alt="blue vase & jar" class="product-img">
         <div class="product-info">
@@ -263,9 +260,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/13set_yellowbase.jpg" alt="set yellowbase" class="product-img">
         <div class="product-info">
@@ -278,9 +273,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/14setgrapots.jpg" alt="set green " class="product-img">
         <div class="product-info">
@@ -293,9 +286,7 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <div class="cards-container">
       <div class="product-card">
         <img src="./assets/products/15setyellowpots.jpg" alt="yellowbase set" class="product-img">
         <div class="product-info">
@@ -308,10 +299,22 @@
           </figure>
         </div>
       </div>
+
+      <div class="product-card">
+        <img src="./assets/products/16ywllowpots.jpeg" alt="yellowpots set" class="product-img">
+        <div class="product-info">
+          <div>
+            <p>$135,00</p>
+            <p>Plant Pot</p>
+          </div>
+          <figure>
+            <img src="./assets/YardSale_Icons/bt_add_to_cart.svg" alt="logo cart" class>
+          </figure>
+        </div>
+      </div>
+
+
     </div>
-
-
-
   </section>
 
 </body>
