@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;500;700&family=Roboto+Mono:wght@200;400&display=swap"
+    rel="stylesheet">
+  <title>Menu</title>
+  <style>
+    :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-green: #96C0B7;
+      --very-light-pink: #de4375;
+      --text-input-field: #e3f8ca;
+      --hospital-green: #499c5f;
+      --text-back: #98a3a0;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--very-light-green);
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .desktop-menu {
+      width: 110px;
+      height: auto;
+      border: 1px solid var(--white);
+      border-radius: 6px;
+      padding: 20px 20px 0 20px;
+    }
+
+    .desktop-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .desktop-menu ul li {
+      text-align: end;
+    }
+
+    .desktop-menu ul li:nth-child(1),
+    .desktop-menu ul li:nth-child(2) {
+      font-weight: bold;
+    }
+
+    .desktop-menu ul li:last-child {
+      padding-top: 20px;
+      border: 1px solid var(white);
+    }
+
+    .desktop-menu ul li:last-child a {
+      color: var(--hospital-green);
+      font-size: var(--sm);
+    }
+
+    .desktop-menu ul li a {
+      color: var(--black);
+      text-decoration: none;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="desktop-menu">
+    <ul>
+      <li>
+        <a href="/" class="title">Myy Orders</a>
+      </li>
+      <li>
+        <a href="/">Myy Account</a>
+      </li>
+      <li>
+        <a href="/">Sign Out</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
