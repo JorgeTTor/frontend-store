@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;500;700&family=Roboto+Mono:wght@200;400&display=swap"
     rel="stylesheet">
-  <title>Order</title>
+
+  <title>Shopping Cart</title>
+
   <style>
     :root {
       --white: #FFFFFF;
@@ -30,6 +33,15 @@
       font-family: 'Roboto Mono', monospace;
     }
 
+    .title-container {
+      display: flex;
+    }
+
+    .title-container img {
+      transform: rotate(180deg);
+      margin-right: 14px;
+    }
+
     .my-order {
       width: 100%;
       height: 100vh;
@@ -39,7 +51,7 @@
 
     .title {
       font-size: var(--lg);
-      margin-bottom: 40px;
+      font-weight: bold;
     }
 
     .my-order-container {
@@ -64,28 +76,20 @@
       padding: 0 24px;
     }
 
-
     .order p:nth-child(1) {
       display: flex;
       flex-direction: column;
     }
-
 
     .order p span:nth-child(1) {
       font-size: var(--md);
       font-weight: bold;
     }
 
-    .order p span:nth-child(2) {
-      font-size: var(--sm);
-      color: var(--very-light-pink)
-    }
-
     .order p:nth-child(2) {
       text-align: end;
       font-weight: bold;
     }
-
 
     .shopping-cart {
       display: grid;
@@ -114,22 +118,50 @@
       font-size: var(--md);
       font-weight: bold;
     }
+
+    .product-detail {
+      width: 360px;
+      padding: 24px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+    }
+
+    .product-detail>img:nth-child(2) {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .primary-button {
+      background-color: var(--hospital-green);
+      border-radius: 8px;
+      border: none;
+      color: var(--white);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+    }
+
+    @media (max-width: 640px) {
+      .product-detail {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="my-order">
-    <div class="my-order-container">
-      <h1 class="title">My order</h1>
-      <div class="my-order-content">
-        <div class="order">
-          <p>
-            <span>01.20.22</span>
-            <span>6 artículos</span>
-          </p>
-          <p>$840.00</p>
-        </div>
-      </div>
+  <aside class="product-detail">
+    <div class="title-container">
+      <img src="./assets/YardSale_Icons/flechita.svg" alt="arrow">
+      <p class="title">My Order</p>
+    </div>
+
+    <div class="my-order-content">
 
       <div class="shopping-cart">
         <figure>
@@ -137,6 +169,7 @@
         </figure>
         <p>Gray Plant Pit</p>
         <p>$250</p>
+        <img src="assets/YardSale_Icons/icon_close.png" alt="close">
       </div>
 
       <div class="shopping-cart">
@@ -145,19 +178,49 @@
         </figure>
         <p>White Jar</p>
         <p>$270</p>
+        <img src="assets/YardSale_Icons/icon_close.png" alt="close">
       </div>
 
       <div class="shopping-cart">
         <figure>
           <img src="./assets/products/3whiteJarandplates.jpg" alt="Set white jars">
         </figure>
-        <p>3 White Jars set</p>
+        <p>1 White Jar and Purple Plate</p>
         <p>$550</p>
+        <img src="assets/YardSale_Icons/icon_close.png" alt="close">
       </div>
 
-    </div>
-  </div>
+      <div class="shopping-cart">
+        <figure>
+          <img src="./assets/products/4set-4jarrones.jpeg" alt="Set white jars">
+        </figure>
+        <p>Set 3 Ceramic Jars (Orange, Purple & Brown)</p>
+        <p>$550</p>
+        <img src="assets/YardSale_Icons/icon_close.png" alt="close">
+      </div>
 
+      <div class="shopping-cart">
+        <figure>
+          <img src="./assets/products/5orangepotandgoldenvase.jpg" alt="Set white jars">
+        </figure>
+        <p>Orange Plant Pot & Golden Vase</p>
+        <p>$550</p>
+        <img src="assets/YardSale_Icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>$840.00</p>
+      </div>
+
+      <button class="primary-button add-to-cart-button">
+        Checkout
+      </button>
+
+    </div>
+  </aside>
 
 </body>
 
