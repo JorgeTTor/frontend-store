@@ -15,18 +15,6 @@
     <link rel="stylesheet" href="/styles/styles.css " />
   <title>Pant Yard:sale Online store for plantlovers</title>
   <style>
-    :root {
-      --white: #FFFFFF;
-      --black: #000000;
-      --very-light-green: #96C0B7;
-      --very-light-pink: #de4375;
-      --text-input-field: #abc2bd;
-      --hospital-green: #499c5f;
-      --text-back: #98a3a0;
-      --sm: 14px;
-      --md: 16px;
-      --lg: 18px;
-    }
 
     body {
       background-color: var(--very-light-green);
@@ -128,7 +116,8 @@
 
 <body>
   <nav>
-    <img src="./frontend-store/assets/YardSale_Icons/icon_menu.svg" alt="menu" class="menu">
+    <img src="./assets/YardSale_Icons/icon_menu.svg" alt="menu" class="menu-hamb">
+   
     <div class="navbar-left">
       <img src="/assets/YardSale_Logos/logo_yard_sale.svg" class="logo" alt="logo">
       <ul>
@@ -174,7 +163,53 @@
         </li>
       </ul>
     </div>
+    <!-- mobile menu -->
+    <div class="mobile-menu inactive">
+      <ul>
+        <li>
+          <a href="/">CATEGORIES</a>
+        </li>
+        <li>
+          <a href="/">All</a>
+        </li>
+        <li>
+          <a href="/">Clothes</a>
+        </li>
+        <li>
+          <a href="/">Electronics</a>
+        </li>
+        <li>
+          <a href="/">Toys</a>
+        </li>
+        <li>
+          <a href="/">Other</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="/" class=>My Orders</a>
+        </li>
+        <li>
+          <a href="/">My Account</a>
+        </li>
+      </ul>
+
+      <div class="menu-down">
+        <ul>
+          <li>
+            <a href="/" class="email">jorge.ttor@platzi.com</a>
+          </li>
+          <li>
+            <a href="/" class="sign-out">Sign out</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </nav>
+<!-- Mobile menu -->
+
   <script src="main.js"></script>
 </body>
 </html>
