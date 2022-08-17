@@ -5,7 +5,7 @@
     --very-light-green: #d8efe3;
     --very-light-pink: #de4375;
     --text-input-field: #e3f8ca;
-    --hospital-green: #499c5f;
+    --hospital-green: #065247;
     --text-back: #98a3a0;
     --sm: 14px;
     --md: 16px;
@@ -137,8 +137,9 @@
   }
 
   .navbar-shopping-cart div {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    color: var(--white);
     background-color: var(--hospital-green);
     border-radius: 50%;
     font-size: var(--sm);
@@ -149,6 +150,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .navbar-shopping-cart img{
+    width: 25px;
+    height: 25px;
   }
   /* DEsktop menu -- Desktop */
 
@@ -201,10 +207,10 @@
     background-color: var(--white);
     position: absolute;
     top: 70px;
-    padding: 24px;
     cursor: pointer;
     left: 0;
-    width: 100%;
+    width: calc(100% - 24px);
+    padding-left: 24px;
   }
 
   .mobile-menu a {
