@@ -203,6 +203,8 @@
     top: 70px;
     padding: 24px;
     cursor: pointer;
+    left: 0;
+    width: 100%;
   }
 
   .mobile-menu a {
@@ -210,7 +212,7 @@
     color: var(--black);
     font-weight: bold;
     /* margin-bottom: 24px; */
-
+    
   }
 
   .mobile-menu ul {
