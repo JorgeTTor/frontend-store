@@ -1,14 +1,18 @@
-const menuEmail = document.querySelector('.navbar-email')
-const desktopMenu = document.querySelector('.desktop-menu')
-const menuHambIcon = document.querySelector('.menu-hamb')
+const menuEmail = document.querySelector('.navbar-email');
+const desktopMenu = document.querySelector('.desktop-menu');
+const menuHambIcon = document.querySelector('.menu-hamb');
+const productDetailCloseIcon = document.querySelector('.product-detail-close');
+
 const mobileMenu = document.querySelector('.mobile-menu')
 const cartIcon = document.querySelector('.navbar-shopping-cart')
 const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+const productDetailContainer = document.querySelector('#productDetail')
 const cardsContainer = document.querySelector('.cards-container')
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHambIcon.addEventListener('click', toggleMobileMenu);
 cartIcon.addEventListener('click', toggleCartAside);
+productDetailCloseIcon.addEventListener('click', closeProductDetailAside );
 
 function toggleDesktopMenu() {
   const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
@@ -25,6 +29,8 @@ function toggleMobileMenu() {
   if(!isAsideClosed) {
     shoppingCartContainer.classList.add('inactive');
   }
+
+  closeProductDetailAside();
   mobileMenu.classList.toggle('inactive');
 }
 
@@ -34,7 +40,27 @@ function toggleCartAside() {
   if(!isMobileMenuClosed) {
     mobileMenu.classList.add('inactive');
   }
+
+  const isProductDetailClosed = productDetailContainer.classList.contains('inactive')
+
+  if(!isProductDetailClosed) {
+    productDetailContainer.classList.add('inactive');
+  }
+
   shoppingCartContainer.classList.toggle('inactive');
+}
+
+
+
+function openProductDetailAside(){
+    shoppingCartContainer.classList.add('inactive')
+
+    productDetailContainer.classList.remove('inactive');
+
+}
+
+function closeProductDetailAside(){
+  productDetailContainer.classList.add('inactive');
 }
 
 const productList = [];
@@ -53,6 +79,12 @@ productList.push({
   price: 235,
   image: "./assets/products/3whiteJarandplates.jpg"
 });
+productList.push({
+  name : 'Pink Plant Pot',
+  price: 138,
+  image: "./assets/products/11pinkpot.jpg"
+});
+
 
 // <div class="product-card">
 // <img src="./assets/products/1graypot_purpleplate.jpg" alt="gray pot" class="product-img">
@@ -75,6 +107,7 @@ function renderProducts(arr){
     //product = { name. price, image } => product.image
     const productImg = document.createElement('img');
     productImg.setAttribute('src', product.image);
+    productImg.addEventListener('click', openProductDetailAside)
     
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');

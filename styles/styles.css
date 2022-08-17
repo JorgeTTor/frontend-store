@@ -3,6 +3,7 @@
     --white: #FFFFFF;
     --black: #000000;
     --very-light-green: #d8efe3;
+    --ext-light-green: ##e6f2ec;
     --very-light-pink: #de4375;
     --text-input-field: #e3f8ca;
     --hospital-green: #065247;
@@ -247,7 +248,7 @@
 
 /* ASIDE product Detail */
 
-.aside {
+#shoppingCartContainer {
   background-color: var(--white);
   width: 360px;
   padding: 0 24px;
@@ -453,6 +454,7 @@
 
     .product-detail-card {
       width: 100%;
+      background-color: var(--very-light-green);
     }
 
     .menu {
