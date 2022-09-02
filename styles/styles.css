@@ -319,7 +319,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   align-items: center;
 }
 
@@ -361,6 +361,7 @@
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
+  margin-bottom: 16px;;
 }
 
 /* DETAILED PRODUCT CARD WITH INFO*/
