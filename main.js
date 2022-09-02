@@ -84,6 +84,46 @@ productList.push({
   price: 138,
   image: "./assets/products/11pinkpot.jpg"
 });
+productList.push({
+  name: 'Orange Plant Pot and Purple Base',
+  price: 120,
+  image: './assets/products/5orangepotandgoldenvase.jpg'
+});
+productList.push({
+  name: 'White Jar',
+  price: 125,
+  image: './assets/products/6whitejar2.jpg'
+});
+productList.push({
+  name: 'Orange Pot',
+  price: 133,
+  image: './assets/products/7orangepot.jpg'
+});
+productList.push({
+  name: 'Light Purple Vase and Jar',
+  price: 141,
+  image: './assets/products/8brown_bluejar.jpg'
+});
+productList.push({
+  name: 'Brown Classic Pot',
+  price: 88,
+  image: './assets/products/9brownpot_cactus.jpg'
+});
+productList.push({
+  name: 'Brown Classic Pot & green plate',
+  price: 99,
+  image: './assets/products/10brownpot_green.jpg'
+});
+productList.push({
+  name: 'Pink Pot and Pale Pink plate',
+  price: 125,
+  image: './assets/products/11pinkpot.jpg'
+});
+productList.push({
+  name: 'Ocean Blue Vase and Jar',
+  price: 135,
+  image: './assets/products/12.jpeg'
+});
 
 
 // <div class="product-card">
